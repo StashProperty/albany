@@ -1,6 +1,6 @@
 require 'scraperwiki'
 require 'mechanize'
-require 'Date'
+require 'date'
 
 date_scraped = Date.today.to_s
 
