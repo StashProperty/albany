@@ -30,6 +30,7 @@ applicationSet.each do |row|
 			end
 		end
 	end
+	record['info_url'] = info_url + record['council_reference']
 	puts "Saving #{record['council_reference']}, #{record['address']}"
 	ScraperWiki.save_sqlite(['council_reference'], record)
 end
